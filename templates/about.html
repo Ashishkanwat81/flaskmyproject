@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+    <h1 style="margin-top:100px;"> About Founder And Co-Founder of social-media</h1>
+    <div class="container" style="margin-top:100px;">
+    <div class="card" style="border-radius: 10px;">
+      
+        <h2>Instagram Co-Founder</h2>
+        <img src="{{ url_for('static', filename='img/instaowner.jpeg') }}" alt="Item 3" style="border-radius: 10px;">
+        <h3>Kevin Systrom </h3>
+        <div class="social-media">
+            <p>Kevin Systrom and Mike Krieger launched Instagram in October 2010, though the app was available only on iOS at that time. Eventually, Instagram became available on Android and Windows as well. The co-founders handled various aspects of Instagram by themselves during the early days of Instagram..</p>
+            <a href="https://www.instagram.com/kanwat__ashish/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Instagram"></a>
+            <a href="https://www.facebook.com/your_facebook_username" target="_blank"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Facebook"></a>
+            <a href="https://www.gmail.com"><img src="{{ url_for('static', filename='img/gmail.png') }}" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn"></a>
+          </div>
+      </div>
+      <div class="card" style="border-radius: 10px; width: 300px;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;">
+        <h2>Facebook Founder</h2>
+        <img src="{{ url_for('static', filename='img/faceowner.png') }}" alt="Item 3" style="border-radius: 10px;">
+        <h3> Mark Zuckerberg  </h3>
+        <div class="social-media">
+            <p>Mark Zuckerberg begins with his fellow co-founders writing Facebook. Zuckerberg launches Facebook as a Harvard-only social network. Zuckerberg, Dustin Moskovitz, and Eduardo Saverin form The facebook.com LLC, a partnership..</p>
+            <a href="https://www.instagram.com/kanwat__ashish/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Instagram"></a>
+            <a href="https://www.facebook.com/your_facebook_username" target="_blank"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Facebook"></a>
+            <a href="https://www.gmail.com"><img src="{{ url_for('static', filename='img/gmail.png') }}" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn"></a>
+          </div>
+      </div>
+      <div class="card" style="border-radius: 10px;">
+        <h2>Gmail Founder</h2>
+        <img src="{{ url_for('static', filename='img/gmailowner.png') }}" alt="Item 3" style="border-radius: 10px;">
+        <h3>Paul Buchheit</h3>
+        <div class="social-media">
+            <p>Gmail was a project started by Google developer Paul Buchheit, who had already explored the idea of web-based email in the 1990s, before the launch of Hotmail, while working on a personal email software project as a college student. Buchheit began his work on Gmail in August 2001..</p>
+            <a href="https://www.instagram.com/kanwat__ashish/" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Instagram"></a>
+            <a href="https://www.facebook.com/your_facebook_username" target="_blank"><img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Facebook"></a>
+            <a href="https://www.gmail.com"><img src="{{ url_for('static', filename='img/gmail.png') }}" alt="Gmail"></a>
+            <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank"><img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="LinkedIn"></a>
+          </div>
+      </div>
+    </div>
+
+    {% endblock %}
+   

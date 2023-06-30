@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+nav {
+  background-color: #6802a3;
+  padding: 10px;
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  background: #ebebeb;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #e3fc05;
+}
+
+li a {
+  display: block;
+  color: rgb(238, 255, 3);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #f309e0;
+}
+
+.active {
+  background-color: #d5cb07;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  ul {
+    display: none;
+  }
+
+  ul.show {
+    display: block;
+  }
+}
+
+.active {
+  background-color: #0531c5;
+}
+
+.container {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background:url(../img/img.png);
+  box-shadow: 0 4px 8px 0 rgba(118, 7, 7, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  /* transform: rotate(180deg); */
+  animation: rotate 1s infinite;
+
+}
+ /* @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+                background: rgb(0, 112, 255);
+                background: linear-gradient(90deg,
+                                             rgba(0, 112, 255, 1) 45%,
+                                             rgba(0, 67, 188, 1) 100%);
+            }
+        } */
+
+.social-media img:hover {
+  opacity: 0.7;
+}
+
+.center {
+  text-align: center;
+  border: 3px solid rgb(87, 0, 128);
+}
+
+.ashish{
+  text-align: center;
+}
+
+.content {
+  background:url(../img/img1.png) top center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(240, 240, 240, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #d1f506;
+}
+
+h3{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #d1f506;
+}
+
+#form-toggle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#form-toggle button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#form-toggle button.active {
+  border-bottom: 2px solid #8a06f6;
+}
+
+form {
+  display: none;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #9707f0;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #03a50d;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background:url(../img/img.png) top center;
+}
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #008aff, #ff137d), url(.gif);
+    background-blend-mode: screen;
+}
+section .content{
+    max-width: 700px;
+}
+section .content h2{
+    font-size: 3em;
+    color: aliceblue;
+}
+
+section .content p{
+    font-size: 1.2em;
+    color: aliceblue;
+}
+section img{
+    position: relative;
+    max-width: 100%;
+    
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+a{
+  color: aliceblue;
+}
+
+label {
+  color: rgb(236, 240, 6);
+}
+
+
+/* #inner {
+  background-color: rgb(236, 9, 9);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+} */
+
+
+
+
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #710580;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add:active {
+  transform: scale(0.98);
+}
+
+.note {
+  background-color: #6d0496;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+  overflow-y: scroll;
+}
+
+.note .tools {
+  background-color: #730a8d;
+  display: flex;
+  justify-content: flex;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.testimonial-container {
+  background-color: #476ce4;
+  color: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+}
+
+.fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+
+.fa-quote-right {
+  left: 40px;
+}
+
+.fa-quote-left {
+  right: 40px;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+
+  .fa-quote {
+    display: none;
+  }
+}

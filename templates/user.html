@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+
+		<h1>User Profile</h1>
+	</div>
+	<div class="row">
+		<h2>Welcome to the user profile page.</h2>
+		<h2></h2>
+	</div>
+	<div class="container" style="margin: 100px; position: relative;">
+		<div class="card" style="border-radius: 8px;">
+			<img src="/static/img/boy.png" alt="Item 2" style="border-radius: 8px;">
+			<h3></h3>
+			<div class="social-media">
+				<a href="https://www.instagram.com/kanwat__ashish/" target="_blank"><img src="/static/img/instagram.png" alt="Instagram"></a>
+				<a href="https://www.facebook.com/your_facebook_username" target="_blank"><img src="/static/img/facebook.png" alt="Facebook"></a>
+				<a href="https://www.gmail.com"><img src="/static/img/gmail.png" alt="Gmail"></a>
+				<a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank"><img src="/static/img/linkedin.png" alt="LinkedIn"></a>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="position: left-top;">
+		Logged in : <strong>{{session.name}} | <a href="{{ url_for('logout') }}"> Logout</a>
+	</div>
+
+{% extends 'video.html' %}
+
+
+	{% endblock %}
